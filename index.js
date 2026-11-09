@@ -457,7 +457,7 @@ app.post('/api/os/:id/gerar-link', verificarAcesso, async (req, res) => {
         }
 
         // Simula como o link ficará no seu Front-end (depois trocamos localhost pelo seu domínio real)
-        const linkFrontEnd = `http://localhost:5500/aprovar-os.html?token=${tokenAprovacao}`;
+        const linkFrontEnd = `https://drinfoos.netlify.app/aprovar-os.html?token=${tokenAprovacao}`;
 
         res.json({ 
             mensagem: "Link gerado com sucesso! Envie para o WhatsApp do cliente.", 
